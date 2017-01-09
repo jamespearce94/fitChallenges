@@ -1,0 +1,24 @@
+<ion-view style="" class=" " id="page10" title="Completed Challenges">
+    <ion-content class="has-header" padding="true">
+
+
+      <ion-list ng-repeat="item in challenges">
+
+        <ion-item class="item-thumbnail-left" >
+
+          <img  ng-src="{{'img/fk/'+ item.challenge_image +'.jpg'}}" >
+
+          <a class="badge badge-balanced" style="position: absolute;right:0;" >{{item.status}}</a>
+
+          <h4> {{item.challenge_name}} </h4>
+          <p>{{item.challenge_price}} XP</p>
+            <p>{{item.challenge_date}}</p>
+
+
+        </ion-item>
+
+      </ion-list>
+
+
+    </ion-content>
+</ion-view>
